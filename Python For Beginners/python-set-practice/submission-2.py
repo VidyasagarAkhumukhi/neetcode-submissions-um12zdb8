@@ -1,0 +1,21 @@
+from typing import List
+
+def contains_duplicate(words: List[str]) -> bool:
+    mySet = set(words)
+
+    if len(mySet) == len(words):
+        return True
+    return False
+
+    # for char in words:
+    #     if char in mySet:
+    #         return True
+    #     mySet.add(char)
+    # return False
+    
+
+# do not modify code below this line
+print(contains_duplicate(["hello", "world", "hello"]))
+print(contains_duplicate(["hello", "world", "i", "am", "great"]))
+print(contains_duplicate(["hello", "hello", "hello"]))
+print(contains_duplicate(["Hello", "hellooo", "hello"]))
